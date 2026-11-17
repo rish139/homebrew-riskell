@@ -4,6 +4,7 @@ A [Homebrew](https://brew.sh) tap for [riskell](https://github.com/rish139/riske
 
 ```sh
 brew tap rish139/riskell
+brew trust rish139/riskell      # Homebrew 7 and later refuses an untrusted third-party tap; skip this on older versions
 brew install riskell            # the latest release, built from source with Apple's Swift toolchain
 brew install --HEAD riskell     # or the main branch
 risk install                    # start it now and at login
