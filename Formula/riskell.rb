@@ -2,8 +2,8 @@ class Riskell < Formula
   desc "Native macOS desktop shell: bars, hover cards and an extension kit"
   homepage "https://github.com/rish139/riskell"
   license "PolyForm-Noncommercial-1.0.0"
-  url "https://github.com/rish139/riskell/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "820b8d500d76f437ad6956a7264b0ed3a7e64e866dd93fa07c059d085a4f3c57"
+  url "https://github.com/rish139/riskell/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "f0c15aef0e4d154fe59cf195e1e27039d78ef150c91f4e700ec752fa4b29a3a4"
   head "https://github.com/rish139/riskell.git", branch: "main"
 
   depends_on macos: :sonoma
