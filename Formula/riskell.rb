@@ -2,8 +2,8 @@ class Riskell < Formula
   desc "Native macOS desktop shell: bars, hover cards and an extension kit"
   homepage "https://github.com/rish139/riskell"
   license "FSL-1.1-MIT"
-  url "https://github.com/rish139/riskell/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "05ba8c8663ae4f3a7e9b4cf9b2bc14ee9469d092666f2b149bf17a83f2b4b53f"
+  url "https://github.com/rish139/riskell/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "5e04536d07a79d50d3d9c1f04bd059a90ee03c8c60590affbef19f743846de7e"
   head "https://github.com/rish139/riskell.git", branch: "main"
 
   depends_on macos: :sonoma
