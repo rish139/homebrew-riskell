@@ -2,8 +2,8 @@ class Riskell < Formula
   desc "Native macOS desktop shell: bars, hover cards and an extension kit"
   homepage "https://github.com/rish139/riskell"
   license "FSL-1.1-MIT"
-  url "https://github.com/rish139/riskell/archive/refs/tags/v0.2.1.tar.gz"
-  sha256 "bd10ef66351b49e9e1da2107dcda143f5972b50496caea3da7dcb47982da8db4"
+  url "https://github.com/rish139/riskell/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "05ba8c8663ae4f3a7e9b4cf9b2bc14ee9469d092666f2b149bf17a83f2b4b53f"
   head "https://github.com/rish139/riskell.git", branch: "main"
 
   depends_on macos: :sonoma
@@ -27,11 +27,12 @@ class Riskell < Formula
         riskell-install
       riskell is tuned to the font Geist Mono (without it macOS substitutes another and widths change):
         brew install --cask font-geist-mono
-      `risk` is the control script (status, log, restart, ext ...). After an upgrade run `risk install` again: the agent points into the keg.
+      `risk` is the control script: `risk help` lists its commands and `risk status` checks the install. After an upgrade run `risk install` again: the agent points into the keg.
     EOS
   end
 
   test do
-    assert_match "usage", shell_output("#{libexec}/.build/release/riskell-ext 2>&1", 2)
+    assert_match version.to_s, shell_output("#{bin}/risk version")
+    assert_match "extensions", shell_output("#{bin}/risk help ext")
   end
 end
